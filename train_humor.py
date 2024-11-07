@@ -249,7 +249,7 @@ if __name__ == "__main__":
     parser.add_argument("--hidden_size", type=int, default=1024)
     parser.add_argument("--init_segment_length", type=int, default=2)
     parser.add_argument("--max_segment_length", type=int, default=11)
-    parser.add_argument("--noise_std", type=int, default=0.01)
+    parser.add_argument("--noise_std", type=float, default=0.01)
     parser.add_argument("--schedule_yes", action="store_true")
     parser.add_argument("--tf_ratio", type=float, default=0.1)
     args = parser.parse_args()
